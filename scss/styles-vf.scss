@@ -21,12 +21,12 @@
 
 @font-face {
   font-family: 'Recursive VF';
-  src: url('../fonts/recursive/recursive-prop_xprn_weight_slnt_ital--2019_08_26.woff2') format('woff2-variations');
+  src: url('../fonts/recursive/recursive-MONO_CASL_wght_slnt_ital--2019_11_05-00_13.woff2') format('woff2-variations');
   font-display: swap;
   font-style: oblique 0deg 15deg;
-  font-weight: 300 900;
-  /* PROP: 0 or 1 */
-  /* XPRN: 0 to 1 */
+  font-weight: 300 1000;
+  /* MONO: 0 or 1 */
+  /* CASL: 0 to 1 */
   /* ital: 0 or 1 */
   /* slnt: 0 to -15 */
 }
@@ -132,8 +132,8 @@ strong {
 
 /* Recursive demo */
 :root {
-  --recursive-PROP: 1; /* bool: 0 or 1 */
-  --recursive-XPRN: 1; /* range: 0 to 1 */
+  --recursive-MONO: 1; /* bool: 0 or 1 */
+  --recursive-CASL: 1; /* range: 0 to 1 */
   --recursive-ital: 0; /* bool: 0 or 1 */
   --recursive-slnt: 0; /* range: 0 to -15 */
 }
@@ -141,6 +141,6 @@ strong {
 .recursive {
   @supports (font-variation-settings: normal) {
     font-family: "Recursive VF", Helvetica, sans-serif;
-    font-variation-settings: "PROP" var(--recursive-PROP), "XPRN" var(--recursive-XPRN), "ital" var(--recursive-ital), "slnt" var(--recursive-slnt);
+    font-variation-settings: "MONO" var(--recursive-MONO), "CASL" var(--recursive-CASL), "ital" var(--recursive-ital), "slnt" var(--recursive-slnt);
   }
 }

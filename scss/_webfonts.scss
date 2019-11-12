@@ -1,12 +1,17 @@
 
 /* Note below that you can find min and max */
 /* values for width and weight */
+
 @font-face {
   font-family: 'Recursive VF';
-  src: url('../fonts/recursive/recursive-prop_xprn_weight_slnt_ital--2019_08_26.woff2') format('woff2-variations');
+  src: url('../fonts/recursive/recursive-MONO_CASL_wght_slnt_ital--2019_11_05-00_13.woff2') format('woff2-variations');
   font-display: swap;
   font-style: oblique 0deg 15deg;
-  font-weight: 300 900;
+  font-weight: 300 1000;
+  /* MONO: 0 or 1 */
+  /* CASL: 0 to 1 */
+  /* ital: 0 or 1 */
+  /* slnt: 0 to -15 */
 }
 
 /* Plex Sans Variable Font */
